@@ -34,10 +34,52 @@ require('lazy').setup {
 }
 ```
 
-### Usage
+## Usage
 
-- To open the Kanban board: :KanbanOpen
-- To load the board from TODO.md: :KanbanLoad
-- To save the board to TODO.md: :KanbanSave
-- To add an item: :KanbanAdd <column> <item>
-- To move an item between columns: :KanbanMove <from_column> <to_column> <index>
+### Open the Kanban Board
+
+```bash
+:KanbanOpen
+```
+
+### Add an Item
+
+```bash
+:KanbanAdd <column> <item>
+```
+
+example
+
+```bash
+:KanbanAdd TODO Implement feature
+```
+
+### Move an Item
+
+move an item between columns
+
+```bash
+ :KanbanMove <from_column> <to_column> <index>
+```
+
+example
+
+```bash
+:KanbanMove TODO InProgress 1
+```
+
+### Save
+
+Save current kanban board
+
+```bash
+:KanbanSave
+```
+
+### load
+
+Load the kanban board from TODO.md file
+
+```bash
+:KanbanLoad
+```
